@@ -1,12 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import styles from "./styles.css";
-import HeroText from "./HeroText";
-import TechStack from "./TechStack";
-import Link from "next/link";
+
 export default function AboutText() {
     useEffect(() => {
         const scrollers = document.querySelectorAll(".scroller");

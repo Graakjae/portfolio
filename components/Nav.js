@@ -3,8 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion as m } from "framer-motion";
 import Image from "next/image";
-import { useAnimation } from "framer-motion";
-import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 import { RemoveScroll } from "react-remove-scroll";
 
