@@ -16,9 +16,9 @@ export default function ProjectPage() {
 
     return (
         <div className="relative lg:flex justify-between px-[5%] w-full h-full">
-            <div className="relative">
-                <div className="w-full lg:w-[35%] relative lg:fixed border border-[#9F8B78] pt-4 px-8 pb-8 shadow-xl rounded-xl">
-                    <h2 className="text-[50px] md:text-[80px] font-extrabold text-[#393633]">{project?.name}</h2>
+            <div className="relative mb-10">
+                <div className="w-full lg:w-[40%] relative lg:fixed border border-[#9F8B78] pt-4 px-4 md:px-8 pb-8 shadow-xl rounded-xl">
+                    <h2 className="text-[50px] md:text-[70px] font-extrabold text-[#393633]">{project?.name}</h2>
                     <p className="text-[20px] font-light">
                         {project?.description}
                         {project?.challenge && (
@@ -32,16 +32,16 @@ export default function ProjectPage() {
                         )}
                     </p>
 
-                    <div className="mt-[30px]">
+                    <div className="mt-[30px] relative w-full">
                         <p className="mb-2 font-medium">Tech stack used</p>
-                        <div className="flex">
+                        <div className="w-full relative flex gap-2">
                             {project?.technology.map((icon, i) => (
                                 <Image
                                     src={icon}
                                     alt="icon"
                                     width={40}
                                     height={40}
-                                    className="w-[40px] h-[40px] mr-[10px] "
+                                    className="w-[30px] h-[30px] md:w-[40px] md:h-[40px]"
                                     key={nanoid()}
                                 />
                             ))}
@@ -65,7 +65,7 @@ export default function ProjectPage() {
                     </div>
                 </div>
             </div>
-            <div className="w-full lg:w-[55%] flex justify-end">
+            <div className="w-full lg:w-[50%] flex justify-end">
                 <div>
                     {project?.img.map((img, i) => (
                         <div className="div mb-10">
