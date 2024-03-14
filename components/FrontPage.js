@@ -46,8 +46,8 @@ export default function About() {
             <div className="flex justify-center items-center w-full px-[5%]">
                 <div className="w-[100%] md:w-[40%]">
                     <Image
-                        src="/group1.png"
-                        alt="HeroPicture"
+                        src="/frederik-graakjaer-portfolio-min.png"
+                        alt="Frederik Graakjær"
                         width={500}
                         height={500}
                         className="h-[100%] w-[100%] rounded-full border-4 border-[#9F8B78]"

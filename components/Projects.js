@@ -46,7 +46,7 @@ export default function Projects() {
     const textLeave = () => setCursorVariant("default");
 
     return (
-        <section id="PROJECTS" className="bg-black rounded-b-[20px] pt-10 relative">
+        <section id="PROJECTS" className="bg-black rounded-b-[20px] pt-10 relative mt-[-1px]">
             <div className="px-[5%] relative ">
                 <h2 className="text-[#D1D1C8] font-extrabold text-[56px] my-5 md:my-10 leading-[1] md:leading-[0.5] ">
                     SELECTED PROJECTS
@@ -62,16 +62,16 @@ export default function Projects() {
                                 >
                                     <Image
                                         src={project.bgImage}
-                                        alt={project.name}
+                                        alt="image background"
                                         className="rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[100%] h-[100%]"
                                         width={600}
                                         height={600}
                                     />
                                     <div className="w-full h-full flex justify-center items-center">
-                                        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] shadow-[0_20px_20px_10px_rgba(0,0,0,0.3)] w-[80%] rounded-md">
+                                        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] shadow-[0_10px_20px_10px_rgba(0,0,0,0.3)] w-[80%] rounded-md">
                                             <Image
                                                 src="/projects/bg/topbar.png"
-                                                alt={project.name}
+                                                alt="topbar"
                                                 className="rounded-t-md w-[100%]"
                                                 width={500}
                                                 height={100}

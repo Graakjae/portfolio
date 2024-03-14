@@ -9,7 +9,7 @@ export default function Contact() {
                 <div className="flex justify-between mt-[30px]">
                     <div>
                         <p className="text-[25px] md:text-[40px] text-[#3B3836] font-bold">Socials</p>
-                        <div className="flex items-center gap-[28px] mt-2">
+                        <div className="flex items-center gap-[18px] md:gap-[28px] mt-2">
                             <Link
                                 href="https://www.linkedin.com/in/frederik-graakjær-b29360206/"
                                 target="_blank"
@@ -24,8 +24,14 @@ export default function Contact() {
                     </div>
                     <div>
                         <p className="text-[25px] md:text-[40px] text-[#3B3836] font-bold">Mail</p>
-                        <div className="flex items-center gap-2 mt-2">
-                            <Image src="/icons/mail-icon.png" alt="github" width={50} height={50} />
+                        <div className="flex flex-col md:flex-row justify-start items-center gap-2 mt-2">
+                            <Image
+                                src="/icons/mail-icon.png"
+                                alt="github"
+                                width={50}
+                                height={50}
+                                className="hidden md:block"
+                            />
                             <p>graakjaer.f@gmail.com</p>
                         </div>
                     </div>

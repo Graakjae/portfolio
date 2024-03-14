@@ -110,15 +110,10 @@ export default function Nav() {
                                     }
                                 }}
                                 onClick={() => setIsOpen(!isOpen)}
-                                className="fixed flex justify-center items-center right-3 top-3 md:right-8 md:top-8 rounded-full duration-200 h-[80px] w-[80px] bg-[#9F8B78] cursor-pointer z-50"
+                                className="fixed flex justify-center items-center right-3 top-3 md:right-8 md:top-8 rounded-full duration-200 h-[65px] w-[65px] md:h-[80px] md:w-[80px] bg-[#9F8B78] cursor-pointer z-50"
+                                name="menu-button"
                             >
-                                <Hamburger
-                                    toggled={isOpen}
-                                    toggle={() => setIsOpen(!isOpen)}
-                                    rounded
-                                    color={"white"}
-                                    className=""
-                                />
+                                <Hamburger toggled={isOpen} toggle={() => setIsOpen(!isOpen)} rounded color={"white"} />
                             </m.button>
                         )}
                     </AnimatePresence>
