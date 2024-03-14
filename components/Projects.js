@@ -51,7 +51,7 @@ export default function Projects() {
                 <h2 className="text-[#D1D1C8] font-extrabold text-[56px] my-5 md:my-10 leading-[1] md:leading-[0.5] ">
                     SELECTED PROJECTS
                 </h2>
-                <div className="grid grid-cols-1 md:grid md:grid-cols-2 gap-5 md:gap-10 relative h-full pb-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 relative h-full pb-10">
                     {projectsData.map((project, index) => (
                         <Link href={`/${project.name}`} className="mb-[30px]">
                             <div className="relative h-[400px] md:h-[600px]  overflow-hidden rounded-md">
