@@ -1,13 +1,13 @@
 "use client";
 import Projects from "@/components/Projects";
 import FrontPage from "@/components/FrontPage";
-import AboutText from "@/components/AboutText";
+import About from "@/components/About";
 import Contact from "@/components/Contact";
 export default function Home() {
     return (
         <div>
             <FrontPage />
-            <AboutText />
+            <About />
             <Projects />
             <Contact />
         </div>

@@ -17,7 +17,7 @@ export default function ProjectPage() {
     return (
         <div className="relative lg:flex justify-between px-[5%] w-full h-full">
             <div className="relative">
-                <div className="w-full lg:w-[35%] relative lg:fixed">
+                <div className="w-full lg:w-[35%] relative lg:fixed border border-[#9F8B78] pt-4 px-8 pb-8 shadow-xl rounded-xl">
                     <h2 className="text-[50px] md:text-[80px] font-extrabold text-[#393633]">{project?.name}</h2>
                     <p className="text-[20px] font-light">
                         {project?.description}
@@ -65,7 +65,7 @@ export default function ProjectPage() {
                     </div>
                 </div>
             </div>
-            <div className="w-full lg:w-[55%] mt-[30px] flex justify-end">
+            <div className="w-full lg:w-[55%] flex justify-end">
                 <div>
                     {project?.img.map((img, i) => (
                         <div className="div mb-10">
