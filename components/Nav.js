@@ -26,7 +26,7 @@ export default function Nav() {
                                     <li>
                                         <Link
                                             className="text-[#9F8B78] text-[25px] font-bold hover:border-b-2 hover:border-[#9F8B78] transition-colors duration-200"
-                                            href={`#${name}`}
+                                            href={`/#${name}`}
                                         >
                                             {name}
                                         </Link>
