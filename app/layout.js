@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
 
 const lato = Lato({
   weight: ["400", "700", "900"],
