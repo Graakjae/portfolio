@@ -7,9 +7,9 @@ export default function HeroText({ reference, isSecondText }) {
       ref={reference}
     >
       <Paragraph text="Frederik Graakjær" />
-      <Paragraph text="frontend developer" />
+      <Paragraph text="web developer" />
       <Paragraph text="Frederik Graakjær" />
-      <Paragraph text="frontend developer" />
+      <Paragraph text="web developer" />
     </span>
   );
 }
