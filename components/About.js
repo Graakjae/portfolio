@@ -73,43 +73,50 @@ export default function AboutText() {
       src: "tailwind-icon.png",
       alt: "tailwind-icon",
     },
+    {
+      src: "expo-icon.png",
+      alt: "expo-icon",
+    },
+    {
+      src: "firebase-icon.png",
+      alt: "firebase-icon",
+    },
   ];
 
   return (
-    <section
-      className="relative bg-black rounded-t-[20px] pt-10 px-[5%]"
-      id="ABOUT ME"
-    >
-      <h2 className="text-[#D1D1C8] font-extrabold text-[56px] md:text-[86px] my-10 leading-[0.5] ">
-        ABOUT ME
-      </h2>
-      <div className="md:flex md:justify-between">
-        <div className="w-[100%] md:w-[47%] bg-[#212121] rounded-lg flex justify-center items-center mb-[30px] md:mb-0">
-          <p className="text-[#D1D1C8] font-regular text-[22px] w-[90%] py-5 px-1">
-            My name is Frederik Graakjær and I'm a web developer based in
-            Aarhus. I specialize in building responsive and user-friendly
-            websites. I have expertise in various JavaScript technologies
-            commonly used for frontend and fullstack development.
-          </p>
-        </div>
-        <div className="w-[100%] md:w-[47%] bg-[#212121] rounded-lg overflow-hidden relative">
-          <p className="text-[#D1D1C8] font-regular text-[25px] text-center mt-[20px] font-semibold">
-            My tech stack
-          </p>
-          <div className="scroller my-[10px] md:my-[30px]" data-speed="fast">
-            <ul class="tag-list scroller__inner">
-              {icons.map((icon, i) => (
-                <li class="tag" key={i}>
-                  <Image
-                    src={`/icons/${icon.src}`}
-                    alt={icon.alt}
-                    width={65}
-                    height={65}
-                    className="w-[55px] h-[55px] md:w-[65px] md:h-[65px]"
-                  />
-                </li>
-              ))}
-            </ul>
+    <section className="relative bg-black rounded-t-[20px] pt-10" id="ABOUT ME">
+      <div className="max-w-[1440px] mx-auto px-[5%] 2xl:px-0">
+        <h2 className="text-[#D1D1C8] font-extrabold text-[56px] md:text-[86px] my-10 leading-[0.5] ">
+          ABOUT ME
+        </h2>
+        <div className="md:flex md:justify-between">
+          <div className="w-[100%] md:w-[47%] bg-[#212121] rounded-lg flex justify-center items-center mb-[30px] md:mb-0">
+            <p className="text-[#D1D1C8] font-regular text-[22px] w-[90%] py-5 px-1">
+              My name is Frederik Graakjær and I'm a web developer based in
+              Aarhus. I specialize in building responsive and user-friendly
+              websites. I have expertise in various JavaScript technologies
+              commonly used for frontend and fullstack development.
+            </p>
+          </div>
+          <div className="w-[100%] md:w-[47%] bg-[#212121] rounded-lg overflow-hidden relative">
+            <p className="text-[#D1D1C8] font-regular text-[25px] text-center mt-[20px] font-semibold">
+              My tech stack
+            </p>
+            <div className="scroller my-[10px] md:my-[30px]" data-speed="fast">
+              <ul className="tag-list scroller__inner">
+                {icons.map((icon, i) => (
+                  <li className="tag" key={i}>
+                    <Image
+                      src={`/icons/${icon.src}`}
+                      alt={icon.alt}
+                      width={65}
+                      height={65}
+                      className="w-[55px] h-[55px] md:w-[65px] md:h-[65px]"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

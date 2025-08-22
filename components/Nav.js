@@ -14,11 +14,10 @@ export default function Nav() {
   ];
   const [ref, inView] = useInView();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(inView);
 
   return (
     <RemoveScroll enabled={isOpen}>
-      <div className="flex justify-between items-center z-10 relative px-[2%] h-[100px]">
+      <div className="flex justify-between items-center z-10 relative h-[100px] max-w-[1440px] mx-auto px-[5%] 2xl:px-0">
         <Link
           href="/"
           className="text-[#9F8B78] text-[1.5em] md:text-[30px] font-bold md:block"
@@ -30,7 +29,7 @@ export default function Nav() {
             <ol className="gap-12 flex">
               {navLinks &&
                 navLinks.map(({ name }, i) => (
-                  <li>
+                  <li key={i}>
                     <Link
                       className="text-[#9F8B78] text-[25px] font-bold hover:border-b-2 hover:border-[#9F8B78] transition-colors duration-200"
                       href={`/#${name}`}
@@ -65,7 +64,10 @@ export default function Nav() {
                   <div className="text-center md:text-end flex-col gap-4 mt-[100px]">
                     {navLinks &&
                       navLinks.map(({ name }, i) => (
-                        <div className="inline-block md:mr-[30px] mt-[20px]">
+                        <div
+                          className="inline-block md:mr-[30px] mt-[20px]"
+                          key={i}
+                        >
                           <Link
                             href={`/#${name}`}
                             initial={{ opacity: 0 }}

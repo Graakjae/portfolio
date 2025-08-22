@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <section
-      className="px-[5%] pt-[30px] pb-[80px] md:pt-[60px] md:flex md:justify-between"
+      className="pt-[30px] pb-[80px] md:pt-[60px] md:flex md:justify-between max-w-[1440px] mx-auto px-[5%] 2xl:px-0"
       id="CONTACT"
     >
-      <div className="w-[100%] md:w-[50%]">
+      <div className="w-[100%] md:w-[50%] ">
         <h2 className="text-[56px] md:text-[86px] font-extrabold text-[#3B3836]">
           Contact
         </h2>
