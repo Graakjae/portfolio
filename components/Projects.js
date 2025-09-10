@@ -114,13 +114,13 @@ export default function Projects() {
                 </div>
 
                 <motion.div
-                  className="bg-[#9F8B78] h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none"
+                  className="hidden sm:block bg-[#9F8B78] h-[10px] w-[10px] rounded-full fixed top-0 left-0 pointer-events-none"
                   variants={variants}
                   animate={cursorVariant}
                   transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
                 >
                   {cursorVariant === "text" && (
-                    <p className="text-white text-[1rem] font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <p className=" text-white text-[1rem] font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                       VIEW
                     </p>
                   )}
