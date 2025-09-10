@@ -103,7 +103,7 @@ export default function Projects() {
                           className={`${
                             project.type === "webapp"
                               ? "rounded-b-md w-[100%]"
-                              : "rounded-[25px] h-[20%] w-[55%] my-2 "
+                              : "sm:rounded-[25px] rounded-[10px] h-[20%] w-[55%] my-1 sm:my-2 "
                           }`}
                           width={1000}
                           height={1000}
